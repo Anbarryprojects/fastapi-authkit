@@ -1,12 +1,25 @@
 [build-system]
 requires = ["setuptools>=42"]
 build-backend = "setuptools.build_meta"
-[bumpver]
-current_version = "1.5.2"
-version_pattern = "MAJOR.MINOR.PATCH"
 
-[bumpver:file_patterns]
-setup.py
-    version="{version}",$
-src/mymodule/__init__.py
-    ^__version__ = "{version}"$
+[tool.bumpver]
+current_version = "0.0.1"
+version_pattern = "MAJOR.MINOR.PATCH"
+commit_message = "bump version {old_version} -> {new_version}"
+commit = true
+tag = true
+push = true
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = [
+    'current_version = "{version}"',
+]
+"setup.py" = [
+    "{version}",
+    "{pep440_version}",
+]
+"README.md" = [
+    "{version}",
+    "{pep440_version}",
+]
+
