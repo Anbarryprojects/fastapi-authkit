@@ -4,20 +4,11 @@ build-backend = "setuptools.build_meta"
 [tool.bumpver]
 current_version = "0.0.2"
 version_pattern = "MAJOR.MINOR.PATCH"
-commit_message = "bump version 0.0.1 -> 0.0.2"
-commit = true
-tag = true
-push = true
+commit_message  = "Bump version {old_version} -> {new_version}"
+commit          = true
+tag             = true
+push            = false
 
 [tool.bumpver.file_patterns]
-"pyproject.toml" = [
-    'current_version = "0.0.2"',
-]
-"setup.py" = [
-    "0.0.2",
-    "{pep440_version}",
-]
-"README.md" = [
-    "0.0.2",
-    "{pep440_version}",
-]
+"pyproject.toml" = ['current_version = "{version}"', 'version = "{version}"']
+"fastapi_authkit/__init__.py" = ["{version}"]
