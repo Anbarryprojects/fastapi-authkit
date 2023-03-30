@@ -1,8 +1,23 @@
 
+![Logo](https://user-images.githubusercontent.com/56755478/228947943-4eed0a00-8f31-424c-8926-d3338e64f608.png)
+
+
 # FastAPI AuthKit
 
 FastAPI-authkit is an extenstion to provide oauth-oidc authentication/authorization and user management for fastapi.
 
+## Features and supported OIDC providers
+
+- Login/SignUp based on following providers: 
+- Google
+- Twitter
+- Github
+- Zoom
+- SSO (OKTA)
+- Facebook (Coming soon...)
+- Microsoft (Coming soon...)
+- Apple (Coming soon...)
+- User management (Coming soon...)
 ## Installation
 
 Install **FastAPI AuthKit** with pip
@@ -134,7 +149,17 @@ See `contributing.md` for ways to get started.
 Please adhere to this project's `code of conduct`.
 
 
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+
 ## Support
 
-For support, email papuridalego@gmail.com or join our Slack channel.
+For support, email papuridalego@gmail.com or join our Telegram Group (Ask us in email).
+
+
+## Feedback
+
+If you have any feedback, please reach out to us at papuridalego@gmail.com
 
