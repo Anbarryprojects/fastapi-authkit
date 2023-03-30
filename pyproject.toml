@@ -1,5 +1,5 @@
 [tool.bumpver]
-current_version = "0.0.2"
+current_version = "0.0.0"
 version_pattern = "MAJOR.MINOR.PATCH"
 
 [build-system]
